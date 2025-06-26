@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: interns-guide
+    env: python
+    plan: free
+    buildCommand: ""
+    startCommand: python interns_guide.py
