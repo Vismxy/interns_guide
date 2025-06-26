@@ -242,4 +242,5 @@ def contact():
     return render_template_string(base_template, title="Contact", content=content)
 
 if __name__ == '__main__':
-    app.run(debug=True, port=5005)
+    port = int(os.environ.get("PORT", 10000))
+    app.run(debug=False, host='0.0.0.0', port=port)
